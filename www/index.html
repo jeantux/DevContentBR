@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="app">
+        <div class="modal-default" v-show="showModal">
+            <div class="details text-right">
+                <a v-on:click="showDetails(false)" class="close-default">X</a>
+                <div class="data-modal text-center">                    
+                    <div class="title-project m-0">
+                        <img id="img-modal" class="card-img-top" :src="dataModal.img" alt="Card image cap">
+                        <h1 class="ml-2 text-white">{{ dataModal.name }}</h1>
+                    </div>  
+
+                    <div class="overflow-auto size-content-modal">
+                        <p> {{ dataModal.desc }} </p>
+                    </div>
+                    <a class="link-default" :href="dataModal.urlYoutube">
+                        <i class="m-btn fa fa-youtube-play" style="font-size:48px; color:rgb(48, 40, 63);"></i>
+                      </a>
+                      <a class="link-default" :href="dataModal.urlGithub">
+                        <i class="m-btn fa fa-github" style="font-size:48px; color:rgb(48, 40, 63);"></i>
+                      </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-project">
+            <h1 class="ml-2 text-white">DevContent <strong>BR</strong></h1>
+            <h3 class="ml-2">O objetivo dessa página é organizar os melhores conteúdos de tecnologia do Mundo </h3>
+            <div class="details-links text-right">
+                <a class="link-default" href="http://github.com/jeaanca/app-live">                
+                    <i class="m-btn fa fa-github" style="font-size:48px; color: white;"></i>
+                 </a>
+
+                 <a class="link-default" href="about.html">                
+                    <i class="m-btn fa fa-info-circle" style="font-size:48px; color: white;"></i>
+                 </a>                 
+            </div>
+        </div>        
+        <div class="row ml-2 p-1">
+            <div
+              v-for="channel in channels"
+              class="card m-2 shadow-default"
+              style="width: 18rem;"
+            >
+                <img v-on:click="showDetails(true, channel)" class="img-default card-img-top" :src="channel.img" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>{{ channel.name }}</strong></h5>
+                  <p class="card-text">{{ channel.desc.substr(0, 100) }} ... </p>
+                  <a class="link-default" :href="channel.urlYoutube">
+                    <i class="m-btn fa fa-youtube-play" style="font-size:48px; color:rgb(48, 40, 63);"></i>
+                  </a>
+                  <a class="link-default" :href="channel.urlGithub">
+                    <i class="m-btn fa fa-github" style="font-size:48px; color:rgb(48, 40, 63);"></i>
+                  </a>
+                </div>
+              </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
