@@ -1,2 +1,8 @@
 # DevContentBR
-Site para organizar conteúdos de programação na internet
+Website for organizing programming content on the internet
+
+## Configure
+npm install
+
+## Run
+npm start
