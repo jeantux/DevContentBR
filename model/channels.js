@@ -1,10 +1,48 @@
-    const channels = [
-        {
+const channels = [
+    {
+        name: 'Fabio Akita',
+        desc: `Este é o canal "AKITANDO" onde eu, Fabio Akita, também conhecido como @AkitaOnRails vou falar dos assuntos que sempre gostei. Quem me acompanha no meu blog, e redes sociais como Facebook, Twitter e Instagram já tem uma idéia do que esperar daqui.
+    
+        Vou tentar publicar no mínimo um vídeo por semana enquanto tento gerenciar meu tempo entre minhas duas empresas, OmniTrade e Codeminer 42, e o evento que organizo anualmente, a THE CONF.
+        
+        Eu curto assuntos geek, otaku, novas tecnologias e quero trazer um pouco disso para cá.` ,
+        urlYoutube: 'https://www.youtube.com/user/AkitaOnRails/featured', 
+        urlGithub: 'https://github.com/akitaonrails',
+        img: 'https://yt3.ggpht.com/a/AATXAJw-bX2VxsG-v9rnFdx-3T9YxbZqshX2QCWghw=s288-c-k-c0xffffffff-no-rj-mo'
+    },
+    {
             name: 'Jean Carlos', 
             desc: 'No meu canal falo sobre diversos conteudos, variando entre Linux, open source, programação ... ', 
             urlYoutube: 'https://www.youtube.com/channel/UCjSFU-9JUt2ATyjomcsRgSQ?view_as=subscriber', 
             urlGithub: "http://github.com/jeaanca",
             img: 'https://yt3.ggpht.com/a/AATXAJy3nHVh9vhVT0It_ohmkFEkn0gTfWGFMnALaw=s288-c-k-c0xffffffff-no-rj-mo'
+        },
+        {
+            name: 'Eduardo Mendes',
+            desc: `Um canal sobre Python e desenvolvimento de software de uma maneira geral.` ,
+            urlYoutube: 'https://www.youtube.com/user/mendesesduardo/featured', 
+            urlGithub: 'https://github.com/dunossauro',
+            img: 'https://yt3.ggpht.com/a/AATXAJxZMUEkHWlKM94pafMq1HXus31_hfmUSI9PZQ=s288-c-k-c0xffffffff-no-rj-mo'
+        },
+        {
+            name: 'Código Fonte TV',
+            desc: `Este é o canal Código Fonte (que começou com um Blog) e que nós chamamos carinhosamente de CDFTV ou o canal dos CDFs no Youtube.
+            Nossos CDFs são os nossos "CóDigo Fonters"!
+            
+            Desde de Janeiro de 2016 o canal publica vídeos semanalmente comigo (Gabriel Fróes) e minha esposa Vanessa Weber. 
+            Somos um casal de programadores apaixonados por tecnologia desde 1996 e por aqui temos a missão de ajudar a todos que queiram trabalhar com TI. 
+            Falamos sobre esse mundo maravilhoso da programação de uma forma diferente e divertida, além de contar nossas experiências na área.
+            
+            Contato exclusivo para negócios: contato@codigofonte.com.br
+            
+            Conheça também nosso canal secundário: Casal CDF onde vamos além da tecnologia, contando nossas histórias no mundo o empreendedorismo, finanças, relacionamentos e outros assuntos que nós também gostamos. https://codft.me/casalcdf
+            
+            Nós ❤️ receber presentes, cartas, brindes e mimos.
+            Caixa Postal: 91735 - Cep: 25620-972
+            Petrópolis / RJ` ,
+            urlYoutube: 'https://www.youtube.com/channel/UCFuIUoyHB12qpYa8Jpxoxow', 
+            urlGithub: 'https://github.com/gabrielfroes',
+            img: 'https://yt3.ggpht.com/a/AATXAJxpQzXaz5gar8MXTTanUGvDI9UrI7xgLN_Elw=s288-c-k-c0xffffffff-no-rj-mo'
         },
         {
             name: 'Filipe Deschamps', 
@@ -56,8 +94,9 @@
             urlYoutube: 'https://www.youtube.com/channel/UCd-vLa_qcKve3CsDFlYiygA', 
             urlGithub: 'https://github.com/RenatoLucasMota',
             img: 'https://yt3.ggpht.com/a/AATXAJzFEybi6BI9SCPIi-EUHPMu-xHfteGBCytIvw=s288-c-k-c0xffffffff-no-rj-mo'
-        }
+        },
 
+        
         
     ]
 
