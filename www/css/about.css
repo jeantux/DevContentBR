@@ -1,0 +1,45 @@
+@import url('./colors.css');
+@import url('./general-setups.css');
+
+body {
+    background: var(--bg-page) !important;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-primary-default);
+}
+
+.title-project h3 {
+    color: var(--bg-secondary-default);
+    
+}
+
+.sub-title-project {
+    color: var(--bg-primary-default);
+}
+
+.title-project {
+    background: var(--bg-primary-default);
+    padding: 12px;
+}
+
+.sub-title-project {
+    background: var(--bg-secondary-default);
+    padding: 12px;
+}
+
+.content {
+    padding: 2% 5%;
+}
+
+.content p {
+    font-family: var(--font-primary-default);
+    font-size: 22px;
+    color: var(--bg-primary-default);
+}
+
+.sub-title-project a:hover {
+    background-color: var(--bg-primary-default) !important;
+    color: white;
+    cursor: pointer;
+}

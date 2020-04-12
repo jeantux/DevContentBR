@@ -10,11 +10,7 @@ server.get('/', (req, res) => {
 })
 
 server.get('/channels', (req, res) => {
-    res.json(
-        {
-            channels: channelsModel
-        }
-    )
+    res.json({ channels: channelsModel })
 })
 
 server.get('/about', (req, res) => {

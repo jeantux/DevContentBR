@@ -1,13 +1,16 @@
+@import url('./colors.css');
+@import url('./general-setups.css');
+
 body {
-    background: #ddd;
+    background: var(--bg-page);
 }
 
 h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-primary-default);
 }
 
 h3 {
-    color: #b1acca;
+    color: var(--bg-secondary-default) !important;
 }
 
 .m-btn{
@@ -19,7 +22,7 @@ h3 {
 }
 
 .title-project {
-    background: #30283f;
+    background: var(--bg-primary-default);
     padding: 12px;
 }
 
@@ -85,4 +88,22 @@ h3 {
 
 .size-content-modal {
     height: 60%;
+}
+
+.channels-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.channel-item {
+    width: 18rem;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.channel-item > img {
+    width: 100%;
 }
