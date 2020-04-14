@@ -13,22 +13,29 @@
     <div id="app">
         <div class="modal-default" v-show="showModal">
             <div class="details text-right">
-                <a v-on:click="showDetails(false)" class="close-default">X</a>
-                <div class="data-modal text-center">                    
-                    <div class="title-project m-0">
+                <a v-on:click="showDetails(false)" id="close-default">X</a>
+                <div class="data-modal text-center">     
+                    <div class="title-showmodal m-0">
                         <img id="img-modal" class="card-img-top" :src="dataModal.img" alt="Card image cap">
                         <h1 class="ml-2 text-white">{{ dataModal.name }}</h1>
                     </div>  
 
+                    <div class="content-github">
+                        <span><strong>Seguidores:</strong> {{ dataModal.github.followers }}</span>
+                        <span><strong>Repositorios:</strong> {{ dataModal.github.repos }}</span>
+                     </div>
+
                     <div class="overflow-auto size-content-modal">
                         <p> {{ dataModal.desc }} </p>
                     </div>
-                    <a class="link-default" :href="dataModal.urlYoutube">
-                        <i class="m-btn fa fa-youtube-play" style="font-size:48px; color:rgb(48, 40, 63);"></i>
+                    <div class="btn-botton-showmodal">
+                      <a class="link-default" :href="dataModal.urlYoutube">
+                          <i class="m-btn fa fa-youtube-play" style="font-size:48px; color:rgb(48, 40, 63);"></i>
                       </a>
-                      <a class="link-default" :href="dataModal.urlGithub">
-                        <i class="m-btn fa fa-github" style="font-size:48px; color:rgb(48, 40, 63);"></i>
+                      <a class="link-default" :href="'http://github.com/' + dataModal.github.usernameGit">
+                          <i class="m-btn fa fa-github" style="font-size:48px; color:rgb(48, 40, 63);"></i>
                       </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,13 +65,16 @@
                   <a class="link-default" :href="channel.urlYoutube">
                     <i class="m-btn fa fa-youtube-play" style="font-size:48px; color:rgb(48, 40, 63);"></i>
                   </a>
-                  <a class="link-default" :href="channel.urlGithub">
+                  <a class="link-default" :href="'http://github.com/' + channel.usernameGit">
                     <i class="m-btn fa fa-github" style="font-size:48px; color:rgb(48, 40, 63);"></i>
                   </a>
                 </div>
               </div>
 
         </div>
+
+      <div class="footer-project">
+      </div>    
 
     </div>
 

@@ -6,8 +6,12 @@ var app = new Vue({
           name: '',
           desc: '',
           img: '',
-          urlYoutube: '',
-          urlGithub: ''
+          github: {
+            urusernameGitl: '',
+            followers: 0,
+            repos: 0,
+          },
+          urlYoutube: ''
       },
       channels: []
     },
@@ -15,6 +19,14 @@ var app = new Vue({
         this.getChannels()
     },
     methods: {
+        getContentGithub (username) {
+            axios({method: 'get', url: `https://api.github.com/users/${username}`})
+            .then(res => {
+                this.dataModal.github.repos = res.data.public_repos
+                this.dataModal.github.followers = res.data.followers
+            })
+            .catch(err => console.log(err))
+        },
         showDetails (param, channel) {
             this.showModal = param
 
@@ -23,8 +35,8 @@ var app = new Vue({
                 this.dataModal.desc = channel.desc
                 this.dataModal.img = channel.img
                 this.dataModal.urlYoutube = channel.urlYoutube
-                this.dataModal.urlGithub = channel.titlurlgithub
-
+                this.dataModal.github.usernameGit = channel.usernameGit
+                this.getContentGithub(channel.usernameGit)
             }
         },
         getChannels () {
@@ -32,6 +44,7 @@ var app = new Vue({
                 .then(res => {
                     this.channels = res.data.channels
                 })
+                .catch(err => console.log(err))
         }
     }
   })

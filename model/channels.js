@@ -7,21 +7,21 @@ const channels = [
             
             Eu curto assuntos geek, otaku, novas tecnologias e quero trazer um pouco disso para cá.` ,
             urlYoutube: 'https://www.youtube.com/user/AkitaOnRails/featured', 
-            urlGithub: 'https://github.com/akitaonrails',
+            usernameGit: 'akitaonrails',
             img: 'https://yt3.ggpht.com/a/AATXAJw-bX2VxsG-v9rnFdx-3T9YxbZqshX2QCWghw=s288-c-k-c0xffffffff-no-rj-mo'
         },
         {
             name: 'Jean Carlos', 
             desc: 'No meu canal falo sobre diversos conteudos, variando entre Linux, open source, programação ... ', 
             urlYoutube: 'https://www.youtube.com/channel/UCjSFU-9JUt2ATyjomcsRgSQ?view_as=subscriber', 
-            urlGithub: "http://github.com/jeaanca",
+            usernameGit: "jeaanca",
             img: 'https://yt3.ggpht.com/a/AATXAJy3nHVh9vhVT0It_ohmkFEkn0gTfWGFMnALaw=s288-c-k-c0xffffffff-no-rj-mo'
         },
         {
             name: 'Eduardo Mendes',
             desc: `Um canal sobre Python e desenvolvimento de software de uma maneira geral.` ,
             urlYoutube: 'https://www.youtube.com/user/mendesesduardo/featured', 
-            urlGithub: 'https://github.com/dunossauro',
+            usernameGit: 'dunossauro',
             img: 'https://yt3.ggpht.com/a/AATXAJxZMUEkHWlKM94pafMq1HXus31_hfmUSI9PZQ=s288-c-k-c0xffffffff-no-rj-mo'
         },
         {
@@ -41,7 +41,7 @@ const channels = [
             Caixa Postal: 91735 - Cep: 25620-972
             Petrópolis / RJ` ,
             urlYoutube: 'https://www.youtube.com/channel/UCFuIUoyHB12qpYa8Jpxoxow', 
-            urlGithub: 'https://github.com/gabrielfroes',
+            usernameGit: 'gabrielfroes',
             img: 'https://yt3.ggpht.com/a/AATXAJxpQzXaz5gar8MXTTanUGvDI9UrI7xgLN_Elw=s288-c-k-c0xffffffff-no-rj-mo'
         },
         {
@@ -57,7 +57,7 @@ const channels = [
             ✅ CONTATO PARA DÚVIDAS GERAIS
             ▸ Utilizar comentário no YouTube, pois desta forma outras pessoas poderão se beneficiar de ler a pergunta e resposta, inclusive poderão participar adicionando novos pontos de vista ou novas dúvidas.`,
             urlYoutube: 'https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw',
-            urlGithub: "https://github.com/filipedeschamps",
+            usernameGit: "filipedeschamps",
             img: 'https://yt3.ggpht.com/a/AATXAJyi6syFivU5JTxaAtUDUFD829HiQmcX2iv_5g=s288-c-k-c0xffffffff-no-rj-mo'
         },
         {
@@ -70,7 +70,7 @@ const channels = [
             
             Fale com o SEO: https://www.instagram.com/robsonvleite`,
             urlYoutube: 'https://www.youtube.com/channel/UCw6vF0DoeshwUcmBnjUe2ZQ', 
-            urlGithub: "https://github.com/UpInside",
+            usernameGit: "UpInside",
             img: 'https://yt3.ggpht.com/a/AATXAJy-6ZGyqR1DR_z-5AMXmGjpGnzCnnN2uqJIew=s288-c-k-c0xffffffff-no-rj-mo'
         },
         {
@@ -85,14 +85,14 @@ const channels = [
             Temos também um podcast com a turma do JovemNerd, o NerdTech:
             https://www.alura.com.br/podcast-nerdtech`, 
             urlYoutube: 'https://www.youtube.com/user/aluracursosonline', 
-            urlGithub: 'https://github.com/alura-cursos',
+            usernameGit: 'alura-cursos',
             img: 'https://yt3.ggpht.com/a/AATXAJy_dNwHLrsUNhhLgJqJw3zswJZf_lAbF8ObDQ=s288-c-k-c0xffffffff-no-rj-mo'
         },
         {
             name: 'Renato Mota',
             desc: 'Focado em Desenvolvimento Mobile, e show room de novas tecnologias, focado em Ui e Ux.', 
             urlYoutube: 'https://www.youtube.com/channel/UCd-vLa_qcKve3CsDFlYiygA', 
-            urlGithub: 'https://github.com/RenatoLucasMota',
+            usernameGit: 'RenatoLucasMota',
             img: 'https://yt3.ggpht.com/a/AATXAJzFEybi6BI9SCPIi-EUHPMu-xHfteGBCytIvw=s288-c-k-c0xffffffff-no-rj-mo'
         },
         {
@@ -101,7 +101,7 @@ const channels = [
 
             Se quiser saber mais detalhes sobre o curso "Do Front ao End" do Marco Bruno, é só entrar em https://dofrontaoend.collabcode.training/investimento que lá tem a ementa completa.`, 
             urlYoutube: 'https://www.youtube.com/channel/UCVheRLgrk7bOAByaQ0IVolg', 
-            urlGithub: 'https://github.com/CollabCodeTech',
+            usernameGit: 'CollabCodeTech',
             img: 'https://yt3.ggpht.com/a/AATXAJx1r1eq8s2lyCqZtUXKL3eECWUflE462sG7mw=s288-c-k-c0xffffffff-no-rj-mo'
         },
         {
@@ -113,7 +113,7 @@ const channels = [
             Para ficar sabendo acompanhe nas redes sociais abaixo.. e por favor inscreva-se aqui no canal!
             `, 
             urlYoutube: 'https://www.youtube.com/channel/UCMre98RDRijOX_fvG1gnsYg', 
-            urlGithub: 'https://github.com/codeshow',
+            usernameGit: 'codeshow',
             img: 'https://yt3.ggpht.com/a/AATXAJx6sqMsJ96lf-XonKzn-z-mskK2BZHg7zYQAg=s176-c-k-c0x00ffffff-no-rj'
         },
         {
@@ -122,7 +122,7 @@ const channels = [
 
             http://comunidade.rocketseat.com.br`, 
             urlYoutube: 'https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg', 
-            urlGithub: 'https://github.com/Rocketseat',
+            usernameGit: 'Rocketseat',
             img: 'https://yt3.ggpht.com/a/AATXAJyV0bh7SfKuhEr2a4i8TpgxHc1hkuayqFkDMQ=s288-c-k-c0xffffffff-no-rj-mo'
         },
         {
@@ -135,7 +135,7 @@ const channels = [
             
             contato@devpleno.com`, 
             urlYoutube: 'https://www.youtube.com/channel/UC07JWf9A0B1scApbS1Te7Ww', 
-            urlGithub: 'https://github.com/devpleno',
+            usernameGit: 'devpleno',
             img: 'https://yt3.ggpht.com/a/AATXAJz53U6c0xWggAYGSGiNmINfYuwGmcdnd_Qkkw=s176-c-k-c0x00ffffff-no-rj'
         }
         
