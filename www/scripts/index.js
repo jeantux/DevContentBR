@@ -7,9 +7,9 @@ var app = new Vue({
           desc: '',
           img: '',
           github: {
-            urusernameGitl: '',
-            followers: 0,
-            repos: 0,
+            username: '',
+            followers: null,
+            repos: null,
           },
           urlYoutube: ''
       },
@@ -35,8 +35,10 @@ var app = new Vue({
                 this.dataModal.desc = channel.desc
                 this.dataModal.img = channel.img
                 this.dataModal.urlYoutube = channel.urlYoutube
-                this.dataModal.github.usernameGit = channel.usernameGit
-                this.getContentGithub(channel.usernameGit)
+                this.dataModal.github.username = channel.usernameGit
+                this.dataModal.github.repos = null
+                this.dataModal.github.followers = null
+                this.getContentGithub(channel.username)
             }
         },
         getChannels () {

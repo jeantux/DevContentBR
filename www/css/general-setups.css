@@ -1,4 +1,11 @@
 :root {
     --font-primary-default: 'Poppins', sans-serif;
-    --border-radius-default: 10px
+    --border-radius-default: 10px;
+    --loading-default: loadingDevcontent 3s infinite;
 }
+
+@keyframes loadingDevcontent {
+    0%    {left: 10%;}
+    50%   {left: 90%;}
+    100%  {left: 10%;}
+  }

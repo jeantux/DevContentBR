@@ -21,9 +21,14 @@
                     </div>  
 
                     <div class="content-github">
+                      <div class="data-git" v-show="dataModal.github.followers !== null">
                         <span><strong>Seguidores:</strong> {{ dataModal.github.followers }}</span>
                         <span><strong>Repositorios:</strong> {{ dataModal.github.repos }}</span>
-                     </div>
+                      </div>
+                      
+                      <div class="circle-animation" v-show="dataModal.github.followers === null"></div>
+                      
+                    </div>
 
                     <div class="overflow-auto size-content-modal">
                         <p> {{ dataModal.desc }} </p>
@@ -32,7 +37,7 @@
                       <a class="link-default" :href="dataModal.urlYoutube">
                           <i class="m-btn fa fa-youtube-play" style="font-size:48px; color:rgb(48, 40, 63);"></i>
                       </a>
-                      <a class="link-default" :href="'http://github.com/' + dataModal.github.usernameGit">
+                      <a class="link-default" :href="'http://github.com/' + dataModal.github.username">
                           <i class="m-btn fa fa-github" style="font-size:48px; color:rgb(48, 40, 63);"></i>
                       </a>
                     </div>

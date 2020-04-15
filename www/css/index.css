@@ -156,3 +156,23 @@ h3 {
 .channel-item > img {
     width: 100%;
 }
+
+.circle-animation {
+    background: var(--bg-primary-default);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: var(--loading-default);
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .details h1 {font-size: 2em !important;}
+    .data-git {
+        margin-top: -5px;
+    }
+    .content-github span {
+        margin-left: 2px;
+        font-size: 14px;
+    }
+}
